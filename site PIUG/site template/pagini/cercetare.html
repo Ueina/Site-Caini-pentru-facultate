@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Site web</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../stiluri/stil_template.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+ <style>
+     #meniu{
+         padding-top:50px;
+     }
+ </style>
+</head>
+
+<body>
+	<div class="container-fluid"> 
+
+  
+	<div class="row">
+	<div class="col-sm-2"></div>
+	<div class="col-sm-8">
+	<div class="banner" style="margin-bottom:0px; background:lightblue;">
+		
+				<img id="poza" src="../images/computer.jpg" alt="poza" class="responsive" width="100px" height="80px" >
+				<a>Site web</a>
+			
+	  </div>
+
+	  <nav class="navbar navbar-expand-sm navbar-custom navbar-light bg-lignt ">
+		
+		<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav mx-auto" style="font-weight:bold; font-size:20px;" >
+					<li class="nav-item">
+						<a class="nav-link" href="../pagini/index.html">Acasa</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../pagini/biografie.html">Biografie</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="../pagini/cercetare.html"> Cercetare</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../pagini/didactic.html"> Didactic</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../pagini/galerie_foto.html"> Galerie foto</a></li>
+					<li class="nav-item">
+						<a  class="nav-link" href="../pagini/contact.html"> Contact</a></li>
+				</ul>
+			</div>
+		
+    </nav>
+
+    <!--Adaugarea taburilor-->
+    <div class="container" id="meniu">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#meniu1">Articole reviste</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#meniu2">Articole conferinte</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#meniu3">Capitole de carte</a>
+            </li>
+        </ul>
+        <br/>
+        
+    <div class="tab-content" >
+
+        <!--Adaugare tab1-->
+        
+        <div id="meniu1" class="container tab-pane active">
+            
+            <input class="form-control" id="filtru1" onkeyup="myFunction1()" type="text" placeholder="Cauta..">
+            <br/>
+        <table class="table table-hover" id="tabel1" style="background-color:white; font-size:14px;">
+            <thead>
+                <th>An publicare</th>
+                <th>Articol</th>
+                <th>Link</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2018</td>
+                    <td>Articol1</td>
+                    <td><a href="#" target="_blank"> link</a></td>
+                </tr>
+                <tr>
+                    <td>2019</td>
+                    <td>Articol 2</td>
+                    <td><a href="#" target="_blank"> pdf</a></td>
+                </tr>
+            </tbody>
+        </table>    
+    </div>
+
+    <!--Adaugare tab2-->
+    <div id="meniu2" class="container tab-pane fade">
+        <input class="form-control" id="filtru2" type="text" placeholder="Cauta.." onkeyup="myFunction2()">
+        <br/>
+        <table id="tabel2" class="table table-hover" style="background-color:white; font-size:14px;">
+            <thead>
+                <th>An publicare</th>
+                <th>Articol</th>
+                <th>Link</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2020</td>
+                    <td>Articol 1</td>
+                    <td><a href="#" target="_blank"> link</a></td>
+                </tr>
+                <tr>
+                    <td>2019</td>
+                    <td>Articol 2</td>
+                    <td><a href="../articole/Articol 2.pdf" target="_blank"> pdf</a></td>
+                </tr>
+            </tbody>
+        </table>    
+    </div>
+
+    <!--Adaugare tab3-->
+    <div id="meniu3" class="container tab-pane fade">
+        <input class="form-control" id="filtru3" type="text" placeholder="Cauta.." onkeyup="myFunction3()">
+        <br/>
+        <table id="tabel3" class="table table-hover" style="background-color:white; font-size:14px;">
+            <thead>
+                <th>An publicare</th>
+                <th>Articol</th>
+                <th>Link</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2017</td>
+                    <td>Carte 1</td>
+                    <td><a href="#" target="_blank"> link</a></td>
+                </tr>
+                <tr>
+                    <td>2016</td>
+                    <td>Carte 2</td>
+                    <td><a href="../articole/Articol 2.pdf" target="_blank"> pdf</a></td>
+                </tr>
+            </tbody>
+        </table>    
+    </div>
+    </div>
+    
+    <footer class="footer" role="contentinfo">
+		<p> Copyright © 2020 | 
+			<a href="#"><i class="fab fa-facebook-square"></i></a>
+			<a href="#"><i class="fab fa-linkedin"></i></a>
+			<a href="#"><i class="fab fa-researchgate"></i></a>
+		</p>
+	  </footer>
+	</div>
+	<div class="col-sm-2"></div>
+    </div>
+    
+    
+</div>
+<!--Functii de cautare-->
+<script>
+    /*Cautare dupa anul publicarii in tab 1*/
+    function myFunction1() {
+      var input, filter, table, tr, td, i, txtValue;
+      input = document.getElementById("filtru1");
+      filter = input.value.toUpperCase();
+      table = document.getElementById("tabel1");
+      tr = table.getElementsByTagName("tr");
+      for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[0];
+        if (td) {
+          txtValue = td.textContent || td.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
+          }
+        }       
+      }
+    }
+    /*Cautare dupa anul publicarii in tab 2*/
+    function myFunction2() {
+      var input, filter, table, tr, td, i, txtValue;
+      input = document.getElementById("filtru2");
+      filter = input.value.toUpperCase();
+      table = document.getElementById("tabel2");
+      tr = table.getElementsByTagName("tr");
+      for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[0];
+        if (td) {
+          txtValue = td.textContent || td.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
+          }
+        }       
+      }
+    }
+    /*Cautare dupa mume articol in tab 2*/
+    function myFunction3() {
+      var input, filter, table, tr, td, i, txtValue;
+      input = document.getElementById("filtru3");
+      filter = input.value.toUpperCase();
+      table = document.getElementById("tabel3");
+      tr = table.getElementsByTagName("tr");
+      for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[1];
+        if (td) {
+          txtValue = td.textContent || td.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
+          }
+        }       
+      }
+    }
+    </script>
+ 
+</body>
+</html>

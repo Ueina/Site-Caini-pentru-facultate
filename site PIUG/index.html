@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width,initial-scale=1.0">
+        <title>Rase de caini</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">       
+
+</head>
+        <body>
+
+           
+           
+
+            
+            <section class="header">
+                <nav>
+                    <a href="index.html"><img src="poze/logo7.png" width="150px" height="100px"></a>
+                    <div class="nav-links" id="navLinks">
+                        <i class="fa fa-times" onclick="hideMenu()"></i>
+                        <ul>
+                            <li><a href="index.html">ACASA</a></li>
+                            <li><a href="rasemari.html">RASE MARI</a></li>
+                            <li><a href="rasemedii.html">RASE MEDII</a></li>
+                            <li><a href="rasemici.html">RASE MICI</a></li>
+                            <li><a href="adoptie.html">ADOPTIE</a></li>
+
+                        </ul>
+                    </div>
+                    <i class="fa fa-bars" onclick="showMenu()"></i>
+                </nav>
+                <div class="text-box">
+                    <h1>Cel mai bun prieten blanos</h1>
+                    <p>Alegerea unui animal de companie poate fi dificila, mai ales cand vorbim de un caine.
+                        Cu ajutorul acestui site vei afla care este<br> cainele potrivit pentru tine, dar si pentru locuinta ta.
+                    </p>
+                    <a href="#info" class="hero-btn">Click pentru a afla mai multe</a>
+                </div>
+            </section>
+
+<!-------------------------------------------------------------------Offer------------------------------------------------------->
+
+<section class="offer">
+    <h1>Ce obtii dupa ce termini de citit site-ul?</h1>
+    <div class="row">
+        <span id="info">
+        <div class="offer-col">
+          <h3>Personalitati compatibile</h3>
+          <p>Iti oferim toate informatiile necesare pentru alegerea cainelui potrivit.
+            Stim cat de important este ca tu si cainele tau sa fiti pe aceeasi lungime de unda,
+            asa ca in functie de personalitatea ta, te vom ajuta sa faci alegerea potrivita.
+            Vei descoperi ce tip de personalitate are fiecare caine, dar si ce nevoi au.
+        </p>
+        </div>
+        <div class="offer-col">
+            <h3>Nevoile cainelui</h3>
+            <p>Se stie ca nu poti plasa orice rasa de caine in orice tip de locuinta.
+                Pe acest site vei afla ce gen de locuinta ar fi cea mai potrivita pentru
+                viitorul tau prieten blanos. Si sa nu uitam despre igiena. Aceasta este foarte importanta
+                pentru caine. Asa cum omul are nevoie sa se spele, sa aiba grija de dintii lui, la fel este 
+                si cu prietenul blanos.
+          </p>
+          </div>
+          <div class="offer-col">
+            <h3>Stil de viata</h3>
+            <p>Un caine fericit inseamna un stapan fericit.
+                Iti vom prezenta ce ii poti da cainelui sa manance, iar daca este cazul
+                sa fie supus unui regim. Alimentatia este foarte importanta pentru un animal.
+                Insa la fel de importanta este miscarea. Exista rase mai lenese, dar si rase mai active.
+                Te vom ajuta sa-ti gasesti cainele potrivit stilului tau de viata.
+          </p>
+          </div>
+          </span>
+    </div>
+</section>
+<footer>
+    <button type="button" class="button">
+        <span class="button__text">Help</span>
+        <span class="button__icon">
+            <ion-icon name="help-outline"></ion-icon> 
+        </span>
+    </button>
+</footer>
+
+
+<!------------------------------------------------------------JavaScript for Toggle Menu----------------------------------------->
+            <script>
+                var navLinks=document.getElementById("navLinks");
+                function showMenu(){
+                    navLinks.style.right="0";
+                }
+                function hideMenu(){
+                    navLinks.style.right="-200px";
+                }
+            </script>
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+             
+        </body>
+</html>
+        
